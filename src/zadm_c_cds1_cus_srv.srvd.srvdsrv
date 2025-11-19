@@ -1,0 +1,4 @@
+@EndUserText.label: 'Customer Service Defintion'
+define service ZADM_C_CDS1_CUS_SRV {
+  expose ZADM_C_CDS1_CUS as CustomerSet;
+}

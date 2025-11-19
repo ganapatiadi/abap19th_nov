@@ -1,0 +1,5 @@
+CLASS zbp_adm_ri_cds_cus DEFINITION PUBLIC ABSTRACT FINAL FOR BEHAVIOR OF zadm_ri_cds_cus.
+ENDCLASS.
+
+CLASS zbp_adm_ri_cds_cus IMPLEMENTATION.
+ENDCLASS.

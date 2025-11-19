@@ -1,0 +1,35 @@
+@Metadata.layer: #CUSTOMER
+annotate entity ZADM_C_CDS1_CUS
+    with 
+{
+
+@UI.facet: [{ 
+    position: 10,
+    label: 'General Data',
+    type: #IDENTIFICATION_REFERENCE 
+  
+}]
+
+
+@UI.identification: [{label: 'OCustomer', position: 10  }]
+ @UI.lineItem: [{  position: 10, importance:  #HIGH,emphasized: true,  type: #STANDARD,label: 'Customer ID'}]
+     Kunnr;
+ 
+ @UI.identification: [{label: 'OName', position: 20  }]
+ @UI.lineItem: [{  position: 20, importance:  #HIGH,emphasized: true,  type: #STANDARD,label: 'Nameee'}]   
+    Name1;
+//    Ort01,
+ 
+ @UI.identification: [{label: 'OCountry', position: 30  }]
+@UI.lineItem: [{  position: 30, importance:  #HIGH,emphasized: true,  type: #STANDARD,label: 'MyCountryyy'}]
+    @Consumption.valueHelpDefinition: [{
+       
+        entity: {
+            name: 'I_Country',
+            element: 'Country'
+        }
+    }]
+
+    Land1;
+    
+}

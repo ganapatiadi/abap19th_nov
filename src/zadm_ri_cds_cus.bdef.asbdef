@@ -1,0 +1,18 @@
+managed implementation in class zbp_adm_ri_cds_cus unique;
+strict ( 2 );
+
+define behavior for ZADM_RI_CDS_CUS //alias <alias_name>
+persistent table zadm_cus
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create ( authorization : global );
+
+  delete;
+ // field ( readonly ) Kunnr;
+update;
+ field ( readonly : update) Kunnr;
+  field ( mandatory : create) Kunnr,name1;
+    field ( mandatory : update) name1;
+}
